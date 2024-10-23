@@ -1,22 +1,26 @@
 import javax.swing.*;
+import javax.swing.plaf.basic.BasicTextAreaUI;
+import java.awt.*;
 
 public class Main {
-    //generazione di numeri primi
-    public static void main(String[] args) {
-        String input = JOptionPane.showInputDialog("Inserisci il limite");
-        int limite = Integer.parseInt(input);
-        for (int i = 1; i <= limite; i++) {
-            if(isPrime(i))
-                System.out.println(i);
-        }
-    }
 
-    public static boolean isPrime(int n) {
-        for (int i = 2; i < n; i++) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
+    JButton open = new JButton("Open");
+    JButton close = new JButton("Modify");
+    JButton save = new JButton("Save");
+
+    public static void main(String[] args) {
+        JFrame f = new JFrame();
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setSize(800, 600);
+
+        //Pulsanti principlai della barra superiore
+
+
+
+        JTextArea textArea = new JTextArea();
+
+        open.setLayout();
+
+        f.setVisible(true);
     }
 }
